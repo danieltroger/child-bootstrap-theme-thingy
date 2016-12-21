@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21.12.2016, 17:46:20
+    Author     : einhornimmond
+    List style definitions for Satzung
+*/
+
+@counter-style greek-moon
+ {
+  system: fixed;
+  symbols: α β γ δ ε ζ η θ ι κ λ μ ν;
+  suffix: ')';
+}
+
+@counter-style latin-moon
+{
+    system: fixed;
+    symbols: a b c d e f g h i k l m n o p q r s t u v w x y z;
+    suffix: ')';
+}
+
+ul.disc {
+    list-style-type:disc;
+}
+ul.latin {
+    list-style-type: latin-moon;
+}
+ul.greek {
+    list-style-type:greek-moon;
+}
+
+ul.greek > li, ul.latin > li {
+    padding-left:15px;
+    text-indent: 0;
+}
+
+ul.number {
+    list-style-type: number;
+    padding-left:20px;
+}
+ul.moon-number {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left:0;
+}
+
+ul.moon-number > li {
+    counter-increment: customlistcounter;
+    padding-left: 25px;
+    text-indent: -25px;
+}
+
+ul.moon-number > li:before {
+    content: counter(customlistcounter) ")";
+    padding-right:10px;
+}
+
+ul.moon-number:first-child {
+    counter-reset:customlistcounter;
+}
+
+li > ul {
+    margin-bottom:10px;
+}
+
+li {
+    margin-bottom:15px;
+}

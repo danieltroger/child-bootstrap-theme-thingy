@@ -1,0 +1,29 @@
+/*
+ Theme Name:   Twitter Bootstrap 3 Blank Theme Child
+ Description:  Bs3 Theme Child for traumland Förderverein design
+ Author:       Dario Rekowski
+ Author URI:   http://dario-rekowski.de
+ Template:     TwitterBootstrap3BlankTheme-master
+ Version:      1.0
+ Text Domain:  Bs3-blank-menaum-child
+
+dark green: #3c8333
+light olive: #a7b33e
+*/
+
+table.big-margin tr td {
+    padding-right: 120px;
+    padding-bottom:60px;
+}
+
+a div#site-title {
+    color: #3c8333;
+}
+
+header .top-main-menu {
+    background: #d3d5af;
+}
+
+a {
+    color: #54a049;
+}
