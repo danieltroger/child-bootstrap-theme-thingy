@@ -9,10 +9,10 @@
 ?>
 <?php get_header(); ?>
 <div class="container main">
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="row main-content">
-        <div class="col-lg-9 col-md-9 col-sm-9 col-9">            
-            <div class="content">            
+        <div class="col-gold-a">            
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <div class="content-block">            
                 <header>
                     <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
                 </header>
@@ -20,12 +20,13 @@
                                 <?php echo the_content(); ?>
                 </article>
             </div> <!-- /.content -->        
+            <?php endwhile; endif; ?>
         </div> <!-- /.col -->
-            <?php endwhile;
-                  endif; ?>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-3 sidebar-wrapper">     
-            <?php //get_sidebar('page'); ?>
+        <div class="col-gold-b">     
+            <div class="content-block">
+                <?php get_sidebar('page'); ?>
+            </div>
         </div><!--/.col -->
-     </div> <!--/.row -->   
+    </div> <!--/.row -->   
 </div><!-- container -->    
 <?php get_footer(); ?>

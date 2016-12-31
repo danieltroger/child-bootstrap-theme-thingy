@@ -39,12 +39,12 @@
                         get_template_part('content', get_post_format());
                     endwhile;
                 endif;
-                /*
+                
                 if (function_exists('wp_pagenavi')) {
                     wp_pagenavi();
                 } else {
                     bootstrapwp_content_nav('nav-below');
-                }*/
+                }
                 ?>
             </div>
         </div><!--/.col -->
