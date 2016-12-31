@@ -26,7 +26,7 @@ white: #e3e3e3
     float:left;
 }
 
-
+/* basics */
 .content-block {
     margin-left:5px; 
     margin-right:5px;
@@ -37,15 +37,99 @@ white: #e3e3e3
     margin-top:10px;
 }
 
-footer {
-    right: 0;
-    bottom: 0;
-    left: 0;   
+.container {
+    width:auto;
+    max-width: auto;
 }
 
-.main-content {
+.cursive-style {
+    font-style:italic;
+}
+
+a {
+    color: #54a049;
+}
+
+a:hover {
+    color: #3c8333;
+}
+
+table.big-margin tr td {
+    padding-right: 120px;
+    padding-bottom:60px;
+}
+
+/* header */
+#site-title, #site-sub-title {
+    margin-left:20px;
+}
+#site-sub-title {
+    max-width: 61.8%;
+}
+
+a div#site-title {
+    color: #3c8333;
+}
+
+header .top-main-menu {
+    background: #d3d5af;
+    height: 38.2%;
+    color:#7ab33e;
+}
+
+.top-main-menu a {
     
 }
+
+/* navbar */
+
+.navbar-default {
+    background-color: #d3d5af;
+    border-top-color:#3c8333;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color:#3c8333;
+}
+.navbar-default .navbar-nav > .dropdown > a .caret,
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #3c8333;
+    border-bottom-color: #3c8333;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color:#285722;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #285722;
+    border-bottom-color: #285722;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color:#8c863f;
+    color:#90e937;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color:#8c863f;
+    color:#90e937;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    background-color:#8c863f;
+    color:#90e937;
+}
+  
+
+
+/* footer */
 
 footer a {
     color: #90e937;
@@ -61,23 +145,5 @@ footer a {
 .footer-menu-wrapper {
     float:none;
 }
-a:hover {
-    color: #3c8333;
-}
-table.big-margin tr td {
-    padding-right: 120px;
-    padding-bottom:60px;
-}
 
-a div#site-title {
-    color: #3c8333;
-}
-
-header .top-main-menu {
-    background: #d3d5af;
-    height: 38.2%;
-}
-
-a {
-    color: #54a049;
-}
+  

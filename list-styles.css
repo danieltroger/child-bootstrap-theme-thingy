@@ -63,10 +63,10 @@ ul.moon-number:first-child {
     counter-reset:customlistcounter;
 }
 
-li > ul {
+.content-block li > ul {
     margin-bottom:10px;
 }
 
-li {
+.content-block li {
     margin-bottom:15px;
 }

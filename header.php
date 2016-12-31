@@ -84,10 +84,12 @@ defined('ABSPATH') or die();
                     </div>
                 </div>
             </div>
-
+            <div class="top-picture">
+                
+            </div>
             <!-- Blog Name & Logo -->
             <div class="top-main-menu">
-                <div class="container">
+                <div class="nav-content">
                     <div class="row">
                         <!-- Logo -->
                         <div class="col-md-9 col-sm-12 brand">
@@ -100,8 +102,10 @@ defined('ABSPATH') or die();
                                 echo '<img src="' . $options['logo'] . '" class="img-responsive" alt="' . get_bloginfo('name') . '">';
                             } else {
                                 echo '<div id="site-title">' . get_bloginfo('name') . '</div>';
+                                
                             }?>  
                             </a>
+                            <?= '<div id="site-sub-title" class="cursive-style">'. get_bloginfo('description').'</div>';?>
                         </div>
 
                         <!-- Header Widget from Theme options -->
