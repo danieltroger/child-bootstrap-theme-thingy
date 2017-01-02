@@ -15,7 +15,7 @@ defined('ABSPATH') or die();
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title><!--<?php echo bloginfo('description') . "," . wp_get_document_title() . "-->" . bloginfo( 'name' ) . (bloginfo('description') == wp_get_document_title() ? "" : "&nbsp;&raquo;&nbsp;" . wp_get_document_title()); ?> </title>
+        <title><?php echo bloginfo( 'name' ) . (is_front_page() ? "" : "&nbsp;&raquo;&nbsp;" . wp_get_document_title()); ?> </title>
         <?php
         // Favicon
         $options = get_option('bicbswp_theme_options');
