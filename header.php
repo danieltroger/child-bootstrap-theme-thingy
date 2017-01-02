@@ -15,7 +15,7 @@ defined('ABSPATH') or die();
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title><?php wp_title(); ?> </title>
+        <title><?php wp_get_document_title(); ?> </title>
         <?php
         // Favicon
         $options = get_option('bicbswp_theme_options');
@@ -26,7 +26,7 @@ defined('ABSPATH') or die();
 
         <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-        <!--        
+        <!--
         <link rel="apple-touch-icon-precomposed" sizes="144x144"
               href="<?php echo get_template_directory_uri(); ?>/assets/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114"
@@ -53,11 +53,11 @@ defined('ABSPATH') or die();
     </head>
     <body <?php body_class(); ?>>
         <header>
-            <!-- Top header --> 
+            <!-- Top header -->
             <div id="top-header">
                 <div class="container">
                     <div class="top-callout">
-                    <!-- Top Callout from Theme Options -->          
+                    <!-- Top Callout from Theme Options -->
                     <?php
                     $options = get_option('bicbswp_theme_options');
 
@@ -85,7 +85,7 @@ defined('ABSPATH') or die();
                 </div>
             </div>
             <div class="top-picture">
-                
+
             </div>
             <!-- Blog Name & Logo -->
             <div class="top-main-menu">
@@ -102,8 +102,8 @@ defined('ABSPATH') or die();
                                 echo '<img src="' . $options['logo'] . '" class="img-responsive" alt="' . get_bloginfo('name') . '">';
                             } else {
                                 echo '<div id="site-title">' . get_bloginfo('name') . '</div>';
-                                
-                            }?>  
+
+                            }?>
                             </a>
                             <?= '<div id="site-sub-title" class="cursive-style">'. get_bloginfo('description').'</div>';?>
                         </div>
@@ -121,7 +121,7 @@ defined('ABSPATH') or die();
                             </div>
                         </div>
                     </div>
-                    
+
                     <?php if (has_nav_menu('main-menu')) { ?>
                     <!-- Menu -->
                         <div class="top-main-menu">
@@ -152,10 +152,10 @@ defined('ABSPATH') or die();
                                         ?>
                                     </div><!-- /.navbar-collapse -->
                                 </nav>
-                            
+
                         </div><!-- /.top-main-menu -->
                   <?php } ?>
-                                
+
                 </div><!-- /.container -->
             </div><!-- /.top-main-menu -->
         </header>
